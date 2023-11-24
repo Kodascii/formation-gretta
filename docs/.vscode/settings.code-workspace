@@ -1,0 +1,20 @@
+{
+    "folders": [
+        {
+            "name": "greta21",
+            "path": ".."
+        },
+        {
+            "name": "workshops",
+            "path": "../../workshops"
+        },
+        {
+            "name": "projects",
+            "path": "../../projects"
+        },
+        {
+            "name": "py-play",
+            "path": "/home/kodascii/Projects/python/playground/"
+        }
+    ]
+}

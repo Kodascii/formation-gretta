@@ -1,0 +1,43 @@
+c-r
+{
+    color: #FF1744;
+}
+
+c-g
+{
+    color: #00E676;
+}
+
+p-b
+{
+    color: #2196F3;
+}
+
+c-r
+{
+    font-family: 'JetBrains Mono';
+    font-weight: 500;
+    color: #FF1744;
+}
+
+c-g
+{
+    font-family: 'JetBrains Mono';
+    font-weight: 500;
+    color: #00E676;
+}
+
+c-b
+{
+    font-family: 'JetBrains Mono';
+    font-weight: 500;
+    color: #2196F3;
+}
+
+u-b
+{
+    font-family: 'JetBrains Mono';
+    text-decoration: underline;
+    font-weight: 500;
+    color: #2196F3;
+}

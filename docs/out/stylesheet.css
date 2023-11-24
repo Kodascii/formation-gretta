@@ -1,0 +1,58 @@
+p-x {
+    font-family: 'JetBrains Mono';
+    font-weight: 500;
+}
+
+p-x[c="red"]
+{
+    color: #FF1744;
+}
+
+p-x[c="green"]
+{
+    color: #00E676;
+}
+
+p-x[c="blue"]
+{
+    color: #2196F3;
+}
+
+p-x[c="indigo"]
+{
+    color: #3949AB;
+}
+
+p-g
+{
+    font-family: 'JetBrains Mono';
+    font-weight: 500;
+    color: #00E676;
+}
+
+p-r
+{
+    font-family: 'JetBrains Mono';
+    font-weight: 500;
+    color: #FF1744;
+}
+
+p-b
+{
+    font-family: 'JetBrains Mono';
+    font-weight: 500;
+    color: #2196F3;
+}
+
+u-b
+{
+    font-family: 'JetBrains Mono';
+    text-decoration: underline;
+    font-weight: 500;
+    color: #2196F3;
+}
+
+x-b
+{
+    color: #2196F3;
+}
