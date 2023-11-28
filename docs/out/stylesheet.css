@@ -56,3 +56,20 @@ x-b
 {
     color: #2196F3;
 }
+
+
+.subtitle
+{
+    font-family: 'JetBrains Mono';
+    font-weight: 500;
+    font-size: 20px;
+    color: #1DE9B6;
+}
+
+.method
+{
+    font-family: 'JetBrains Mono';
+    font-weight: 500;
+    font-size: 18px;
+    color: #2196F3;
+}
