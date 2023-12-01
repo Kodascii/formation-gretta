@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="../stylesheet.css">
 
-# MAJ Python
+# Python: Types & Variables
 
 ## Contexte
 
