@@ -1,0 +1,172 @@
+html
+{ font-family : 'Roboto'; }
+
+h1
+{
+    font-family : 'JetBrains Mono';
+    color       : #1DE9B6;
+    font-weight : 500;
+    font-size   : 1.6em;
+    padding-top : 30px;
+}
+
+h1::before
+{ content: "§ "; }
+
+h2
+{
+    font-family : 'JetBrains Mono';
+    color       : #B2EBF2;
+    font-weight : 500;
+    font-size   : 1.4em;
+}
+
+h3
+{
+    font-family : 'JetBrains Mono';
+    color       : #FFAB91;
+    font-weight : 600;
+    font-size   : 1.2em;
+}
+
+strong
+{
+    font-family : 'Roboto Condensed';
+    color       : #F48FB1;
+}
+
+u
+{
+    text-decoration : none;
+    color           : #FFECB3;
+}
+
+pre, code   /* code */
+{
+    font-family : 'Roboto Mono';
+    font-weight : 500;
+}
+
+ul, ol  /* unordered/ordered lists */
+{
+    margin  : 0px;
+    padding : 0px 0px 0px 40px;
+}
+
+li
+{
+    padding : 0px;
+    margin  : 0px;
+}
+
+th  /* table head */
+{ color   : #4DD0E1; }
+
+a:link
+{ color   : #40C4FF; }
+
+f-box  /* function container */
+{ display : block; }
+
+d-c::before
+{
+    font-family : 'Roboto Mono';
+    content     : "\00a0:\00a0";
+}
+
+f-head
+{
+    display             : block;
+    background-color    : #1A1A1A;
+    padding             : 10px 15px 10px 15px;
+}
+
+f-body
+{
+    display             : block;
+    background-color    : #1c1f22;
+    padding             : 20px;
+}
+
+f-body pre  { font-size  : 1rem;   }
+f-body code { font-size  : 0.9rem; }
+
+f-name  /* function name */
+{
+    font-family     : 'JetBrains Mono';
+    color           : #B2EBF2;
+    font-size       : 1.2rem;
+    font-weight     : 500;
+}
+
+f-desc /* function description */
+{
+    font-family : 'Roboto Slab';
+    color       : #B2EBF2;
+    font-size   : 1.1rem;
+}
+
+f-box ul, ul[t="param"]
+{
+    padding             : 0px;
+    margin              : 0px;
+    list-style-position : inside;
+}
+
+f-param /* function parameter */
+{
+    display     : inline;
+    font-family : 'Roboto Mono';
+    font-size   : 1rem;
+    color       : #F48FB1;
+    font-weight : 600;
+}
+
+f-param::after
+{
+    color   : #BDBDBD;
+    content : ' — ';
+}
+
+ul[t="arg"]
+{
+    list-style          : none;
+    padding             : 0px 0px 0px 20px;
+    margin              : 10px 0px 10px 0px;
+    list-style-position : inside;
+}
+
+ul[t="arg"] li
+{
+    font-family : 'Roboto Mono';
+    font-size   : 0.9rem;
+    color       : #B2EBF2;
+}
+
+ul[t="arg"] li::before
+{
+    font-family : 'JetBrains Mono';
+    font-size   : 1rem;
+    content     : ':= '
+}
+
+f-arg /* function argument */
+{
+    display     : inline;
+    font-family : 'Roboto Mono';
+    font-size   : 1rem;
+    color       : #80CBC4;
+    font-weight : 500;
+}
+
+f-arg[t="int"]
+{ color : #FFB74D; }
+
+f-arg[t="str"]
+{ color : #AED581; }
+
+f-arg[t="str"]::before, f-arg[t="str"]::after
+{
+    content : "'";
+    color   : #4DD0E1;
+}

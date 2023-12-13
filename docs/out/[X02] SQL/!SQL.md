@@ -2,7 +2,6 @@
 
 # SQL Syntax
 
-
 ## RDBMS
 **RDBMS** stands for *Relational Database Management System*. **RDBMS** is the basis for **SQL**, and for all modern database systems such as **MS SQL Server**, **IBM DB2**, **Oracle**, **MySQL**, and **Microsoft Access**.
 
@@ -18,33 +17,35 @@
 
 ### NUMERICS
 | Data type               | Description                                                                                |
-|---------------------------------|------------------------------------------------------------------------------------|
+|-------------------------|--------------------------------------------------------------------------------------------|
 | `BIT(size)`             | *A bit-value type.* `size[1-64](default=1)`                                                |
 | `BOOL` / `BOOLEAN`      | *Zero is considered as false, nonzero values are considered as true.*                      |
 | `INT` / `INTEGER(size)` | `size` *- specifies the maximum display width (which is 255)*                              |
 | `FLOAT(p)`              | `p` *- value to determine whether to use `FLOAT` or `DOUBLE` for the resulting data type.* |
 
-## SEARCHING
+
+
+## OPERATIONS
+
+### SEARCHING
 ```sql
 SELECT column1, column2, ...
 FROM table_name;
 ```
-- `DISTINCT` : *used to return only distinct values*
+
 ```sql
 SELECT DISTINCT column1, column2, ...
 FROM table_name;
 ```
 
-## SORTING
-...
 
-## INSERTIONS
+### INSERTIONS
 ```sql
 INSERT INTO table_name (column1, column2, column3, ...)
 VALUES (value1, value2, value3, ...);
 ```
 
-## CONDITIONS
+### CONDITIONS
 ```sql
 SELECT column1, column2, ...
 FROM table_name
@@ -63,7 +64,7 @@ WHERE predicate;
 | `LIKE`    | Search for a pattern                 |
 | `IN`      | List of possible values for a column |
 
-## NEW TABLE
+### NEW TABLE
 ```sql
 CREATE TABLE table_name (
     column1 datatype,

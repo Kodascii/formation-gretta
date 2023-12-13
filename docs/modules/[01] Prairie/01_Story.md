@@ -1,42 +1,41 @@
-<link rel="stylesheet" href="../stylesheet.css">
+<link rel="stylesheet" href="../../stylesheet.css">
 
-# Story 1 (Pédagogie active)
+# Story_01 — Pédagogie active
 
 ## Contexte
 > Integration d'une formation avec une pédagogie active.
 
 ## Mots clefs
-- **Apprentissage**
-  - **par Compétence :** *Méthode d'apprentissage qui se centre sur l'acquisition des compétences.*
-  - **Collaboratif :** *Acquisition des connaissances par échange*
-  - **par Erreur :** *Procédure de mutation des connaissances, en réponse à une discordance*
-  - **par Problème :** *Acquisition des connaissances, par la resolution de problèmes.*
-  - **par Projet :** *Acquisition des connaissances en se confrontant à une situation réelle, complexe, et compléte*
-- **Autoformation :** *Processus d'apprentissage par sois-même.*
-- **Pedagogie active (P.A.) :** *Ensemble de méthodes pédagogiques qui rende l'élève acteur de son apprentissage.*
-- **RER (Rapport d'Etude et de Recherche) :** *Compte rendu (écrit ou oral) du projet.*
-- **Resssource :** **
-- **Rituel :** *Feuille de route que l'on doit suivre pour répondre à un problème*
-- **Rôle (formateur) :** *Anime le group, évalue, réalise des bilans*
-- **Savoir :** *Ensemble des connaissances acquises*
-- **Savoir-être :** *Ensemble des aptitudes permettant de produire des actions adaptées à son environnement.*
-- **Savoir-faire :** *Ensemble des connaissances liée à un domaine.*
-- **Softskills :** *Attributs personnels qui habilite un individu à intéragir et travailler avec les autres.*
-- **Story :** *Permet de faire une mise en situation*
-- **Vulgarisé :** *Description d'une notion avec un ensemble de termes, communs au grand public.*
+- <def-of>Apprentissage -</def-of>
+  - <def-of>- par Compétence</def-of> : *Méthode d'apprentissage qui se centre sur l'acquisition des compétences.*
+  - <def-of>- Collaboratif</def-of> : *Acquisition des connaissances par échange*
+  - <def-of>- par Erreur</def-of> : *Procédure de mutation des connaissances, en réponse à une discordance*
+  - <def-of>- par Problème</def-of> : *Acquisition des connaissances, par la resolution de problèmes.*
+  - <def-of>- par Projet</def-of> : *Acquisition des connaissances en se confrontant à une situation réelle, complexe, et compléte*
+- <def-of>Autoformation</def-of> : *Processus d'apprentissage par sois-même.*
+- <def-of>Pedagogie active (P.A.)</def-of> : *Ensemble de méthodes pédagogiques qui rende l'élève acteur de son apprentissage.*
+- <def-of>RER (Rapport d'Etude et de Recherche)</def-of> : *Compte rendu (écrit ou oral) du projet.*
+- <def-of>Rituel</def-of> : *Feuille de route que l'on doit suivre pour répondre à un problème*
+- <def-of>Rôle (formateur)</def-of> : *Anime le group, évalue, réalise des bilans*
+- <def-of>Savoir</def-of> : *Ensemble des connaissances acquises*
+- <def-of>Savoir-être</def-of> : *Ensemble des aptitudes permettant de produire des actions adaptées à son environnement.*
+- <def-of>Savoir-faire</def-of> : *Ensemble des connaissances liée à un domaine.*
+- <def-of>Softskills</def-of> : *Attributs personnels qui habilite un individu à intéragir et travailler avec les autres.*
+- <def-of>Story</def-of> : *Permet de faire une mise en situation*
+- <def-of>Vulgarisé</def-of> : *Description d'une notion avec un ensemble de termes, communs au grand public.*
 
 ## Problématiques
 - *Comment apprende à apprendre ?*
 - *Quels sont les avantages d'une pédagogie active ?*
 
 ## Hypothèses
-1. La pédagogie active permet d'avancer plus rapidement <p-g>(V)</p-g>;
-2. Permet d'être autonome <p-g>(V)</p-g>;
-3. Développe le travail d'équipe <p-g>(V)</p-g>;
-4. Mettre la théorie en pratique, et favorise pratique en théorie <p-g>(V)</p-g>;
-5. Explorer les ressources <p-g>(V)</p-g>;
-6. Apporter ses connaissances <p-g>(V)</p-g>;
-7. Le rythme différé <p-g>(V)</p-g>.
+1. <u>La pédagogie active permet d'avancer plus rapidement</u> <h-f/>
+2. <u>Permet d'être autonome</u> <h-t/>
+3. <u>Développe le travail d'équipe</u> <h-t/>
+4. <u>Mettre la théorie en pratique, et favorise pratique en théorie</u> <h-t/>
+5. <u>Explorer les ressources</u> <h-t/>
+6. <u>Apporter ses connaissances</u> <h-t/>
+7. <u>Le rythme différé</u> <h-t/>
 
 ## Plan d'action
 1. Investigation des ressources;
@@ -50,22 +49,24 @@
 # RER
 
 ## Avantages/Inconvenients
-<p-x c="green">Avantages</p-x>
+
+### Avantages
 - Implications de l'apprenant;
 - Dynamisation du groupe;
 - Favorise l'autonomie.
 
-<p-x c="red">Inconvenients</p-x>
+### Inconvenients
 - Temps très incertain;
 - Risques d'apprenant se laissant tirer.
 
 ## Méthodologie
-> **Rôle:**
-> - Apprenant
->   - Lecteur (*pour l'initialisation*)
->   - Rapporteur (*pour l'initialisation et la **restitution***)
-> - Formateur
->   - N'intervient que sur demande
+
+**Rôle:**
+- Apprenant
+  - Lecteur (*pour l'initialisation*)
+  - Rapporteur (*pour l'initialisation et la **restitution***)
+- Formateur
+  - N'intervient que sur demande
 
 > **Phase d'initialisation**
 > - Lecture de la story

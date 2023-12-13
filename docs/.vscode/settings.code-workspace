@@ -15,6 +15,10 @@
         {
             "name": "py-play",
             "path": "/home/kodascii/Projects/python/playground/"
+        },
+        {
+            "name": "sql-play",
+            "path": "/home/kodascii/Projects/sql/sql-play"
         }
     ]
 }
