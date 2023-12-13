@@ -89,6 +89,7 @@ x-b
 html
 {
     font-family: 'Roboto';
+    background-color: #212121;
 }
 
 /* - MARKDOWN FORMAT ----------------------------------------------------- */
@@ -134,6 +135,10 @@ h3
 h3::before
 {
     content: "0"counter(h3-counter) ". ";
+}
+
+* {
+    color: #FAFAFA;
 }
 
 strong

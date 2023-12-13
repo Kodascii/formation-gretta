@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>01_Story1.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<link rel="stylesheet" href="../../stylesheet.css">
+<h1 id="story01--merise--mcdmpd">Story_01 — Merise &amp; MCD/MPD</h1>
+<h2 id="contexte">Contexte</h2>
+<blockquote>
+<p>Concevoir et réaliser une base de données, ainsi que comprendre les modèles MCD, MLD et MPD.</p>
+</blockquote>
+<h2 id="mots-clefs">Mots clefs</h2>
+<ul>
+<li><def-of>Attribut</def-of> : <em>Les entités sont caractérisées par des attributs qui décrivent différentes propriétés ou caractéristiques de l'entité. (Par exemple, un client pourrait avoir des attributs tels que &quot;Nom&quot;, &quot;Adresse&quot;, et &quot;Numéro de téléphone&quot;.)</em></li>
+<li><def-of>Entité</def-of> : <em>Objet ou un concept distinct du monde réel, pouvant être identifié et différencié des autres objets.</em></li>
+<li><def-of>Cardinalité</def-of> : <em>Couples de valeur qui apportent des contraintes sur le MCD. Elles traduisent des règles de gestion — Dans le modèle UML on parle alors de multiplicité : c’est le nombre de relations possibles entre types. Si une classe « ville » peut avoir 10 « structures », il y a multiplicité 0..10.</em></li>
+<li><def-of>Dépendance Fonctionnelle</def-of> : <em>Formellement, dans une table relationnelle, une dépendance fonctionnelle est notée comme A → B, où A et B sont des ensembles d'attributs (colonnes). Cela signifie que, pour chaque combinaison unique de valeurs dans les colonnes A, il existe une seule valeur correspondante dans la colonne B.</em>
+<ul>
+<li><def-of>— Complète</def-of> : <em>A → B, où B dépend entièrement de A, et si nous retirons n'importe quel attribut de A, la dépendance fonctionnelle ne tiendra plus.</em></li>
+<li><def-of>— Transitive</def-of> : <em>Si A → B et B → C, alors A → C. Cela signifie que la dépendance fonctionnelle se propage à travers une autre colonne.</em></li>
+<li><def-of>— Partielle</def-of> : <em>Si A → B, mais B dépend également d'un autre attribut C, alors il y a une dépendance fonctionnelle partielle.</em></li>
+</ul>
+</li>
+<li><def-of>Dictionnaire de données</def-of> : <em>Ensemble organisé d'informations détaillées sur les données utilisées dans un système d'information ou une base de données. Il s'agit d'une documentation qui fournit une description détaillée de chaque élément de données, y compris sa signification, sa source, son format, sa relation avec d'autres données, etc. Ce dictionnaire joue un rôle essentiel dans la gestion des données et la communication entre les équipes techniques et non techniques au sein d'une organisation.</em></li>
+<li><def-of>Héritage</def-of> : **</li>
+<li><def-of>Looping</def-of> : <em>Lociel de modélisation conceptuelle de données (<em>entièrement gratuit et libre d'utilisation</em>).</em></li>
+<li><def-of>Merise</def-of> : <em>Méthode pour rassembler les idées sans effort, ou encore, vient du merisier qui est un porte-greffe.</em></li>
+<li><def-of>PowerAMC</def-of> : <em>Outil, utilisé pour concevoir et modéliser des bases de données, ainsi que d'autres éléments tels que des architectures d'entreprise, des modèles UML, etc.</em></li>
+<li><def-of>Règle de gestion</def-of> : **</li>
+<li><def-of>Relation</def-of> : <em>Référence à une table spécifique qui stocke des données structurées.</em></li>
+<li><def-of>Sémantique</def-of> : <em>La sémantique concerne la manière dont les données représentent le monde réel et la façon dont elles sont interprétées par les utilisateurs et les applications.</em></li>
+<li><def-of>[1] MCD (Modèle Conceptuel des Données)</def-of> : <em>Représentation graphique de haut niveau qui permet facilement et simplement de comprendre comment les différents éléments sont liés entre eux.</em></li>
+<li><def-of>[2] MLD (Modèle Logique des Données)</def-of> : <em>Représentation textuelle du MCD.</em></li>
+<li><def-of>[3] MPD (Modèle Physique des Données)</def-of> : <em>Étape permettant de construire la structure finale de la base de données avec les différents liens entre les éléments qui la composent (<em>usage de SQL</em>).</em></li>
+<li><def-of>MER (Modèle Entité-Relation)</def-of> : <em>Modèle conceptuel qui utilise des entités, des relations et des attributs pour représenter graphiquement la structure d'une base de données.</em></li>
+<li><def-of>UML (Unified Modeling Language)</def-of> : <em>Langage de modélisation visuelle utilisé pour concevoir, spécifier et documenter les systèmes logiciels.</em></li>
+<li><def-of>Normalisation</def-of> : <em>Processus de conception qui vise à organiser les données de manière efficace pour réduire la redondance et améliorer l'intégrité des données.</em>
+<ul>
+<li><def-of>— Première Forme Normale (1NF)</def-of> : <em>Une table est en 1NF si elle ne contient pas de valeurs répétées ou de groupes de valeurs atomiques. Chaque colonne de la table doit contenir une seule valeur et ne doit pas être une liste ou un ensemble de valeurs.</em></li>
+<li><def-of>— Deuxième Forme Normale (2NF)</def-of> : <em>Une table est en 2NF si elle est en 1NF et si toutes ses dépendances fonctionnelles dépendent de la totalité de la clé primaire. Cela signifie qu'il ne doit pas y avoir de dépendance partielle de la clé primaire.</em></li>
+<li><def-of>— Troisième Forme Normale (3NF)</def-of> : <em>Une table est en 3NF si elle est en 2NF et si elle ne contient pas de dépendances transitives entre les colonnes non clés. En d'autres termes, toutes les colonnes non clés doivent dépendre uniquement de la clé primaire.</em></li>
+</ul>
+</li>
+</ul>
+<h2 id="probl%C3%A9matiques">Problématiques</h2>
+<ol>
+<li>Comment concevoir une base de donnés avec la méthode Merise ?</li>
+<li>Comment stucturé les données et construire le MCD ?</li>
+</ol>
+<h2 id="hypoth%C3%A8ses">Hypothèses</h2>
+<ul>
+<li><u>Une base de données contient forcément plusieurs fichiers</u> <h-f/>
+<ul>
+<li><strong>Bases de données monolithiques</strong> : <em>Dans ce cas, toute la base de données est stockée dans un seul fichier ou un ensemble de fichiers très étroitement liés.</em></li>
+<li><strong>Bases de données distribuées</strong> : <em>Ces bases de données sont réparties sur plusieurs fichiers ou serveurs, ce qui permet de gérer de grandes quantités de données de manière plus efficace.</em></li>
+</ul>
+</li>
+<li><u>On peut se passer de la méthode Merise pour créer une base de données</u> <h-t/></li>
+<li><u>Une table peut avoir plusieurs clefs étrangères</u> <h-t/></li>
+<li><u>On peut créer un MPD avant un MCD</u> <h-t/></li>
+<li><u>Le MPD est identique au MCD </u> <h-f/>
+<ul>
+<li><em>Ce sont deux étapes distinctes dans le processus de conception d'une base de données. Ils représentent différents niveaux d'abstraction et servent des objectifs différents.</em></li>
+</ul>
+</li>
+<li><u>La méthode Merise est la meilleure méthode pour concevoir une base de données</u> <h-f/>
+<ul>
+<li><em>Il est important de noter que l'adéquation d'une méthodologie dépend des besoins spécifiques du projet, de la complexité de l'application, des compétences de l'équipe de développement et d'autres facteurs.</em></li>
+</ul>
+</li>
+<li><u>Il est possible de relier une entité a elle-même</u> <h-t/>
+<ul>
+<li><em>Cela s'appelle une &quot;relation réflexive&quot; ou &quot;auto-association&quot;.</em></li>
+</ul>
+</li>
+<li><u>La phase de modélisation d’une BDD est facultative</u> <h-t/></li>
+<li><u>Modifier le schéma d’une BDD peut permettre d’ajouter une couche de sécurité</u> <h-t/>
+<ul>
+<li><strong>Normalisation et Restructuration</strong> : <em>Une bonne conception de base de données, y compris la normalisation, peut contribuer à améliorer la sécurité en réduisant les risques liés à la redondance des données. La normalisation peut également faciliter la gestion des autorisations d'accès en permettant des contrôles plus granulaires sur les tables.</em></li>
+<li><strong>Ajout de Contraintes d'Intégrité</strong> : <em>L'ajout de contraintes d'intégrité, telles que les clés étrangères, peut garantir la cohérence des données et prévenir les manipulations indésirables. Cela peut être particulièrement important pour éviter les attaques telles que l'injection de données.</em></li>
+<li><strong>Contrôles d'Accès Renforcés</strong> : <em>La modification du schéma pour mettre en place des contrôles d'accès basés sur les rôles, les utilisateurs et les privilèges peut améliorer la sécurité en garantissant que seules les personnes autorisées ont accès aux données.</em></li>
+</ul>
+</li>
+<li><u>Pour faire une relation entre 2 tableaux il n’est pas nécessaire d’avoir une clef étrangère</u> <h-t/>
+<ul>
+<li><em>(à éviter)</em></li>
+</ul>
+</li>
+</ul>
+<h2 id="plan-daction">Plan d'action</h2>
+<ol>
+<li>Investigation des ressources;</li>
+<li>Définitions des mots clefs;</li>
+<li>Vérifier les hypothèses;</li>
+<li>Faire le workshop;</li>
+<li>Répondre aux questions.</li>
+</ol>
+<h1 id="rer">RER</h1>
+<h2 id="lecture-mld">Lecture MLD</h2>
+<ul>
+<li>Chaque ligne représente une table;</li>
+<li>C’est toujours le nom de la table qui est écrit en premier;</li>
+<li>Les champs sont listés entre parenthèses et séparés par des virgules;</li>
+<li>Les clés primaires sont soulignées et placées au début de la liste des champs;</li>
+<li>Les clés étrangères sont préfixées par un dièse.</li>
+</ul>
+<h2 id="changement-de-vocabulaire-entre-mcd-et-mpd">Changement de vocabulaire entre MCD et MPD</h2>
+<ul>
+<li>Une entité du MCD devient une table;</li>
+<li>L'identifiant de l'entité devient la clé primaire de la table;</li>
+<li>Les autres propriètes de l'entité se transforme en champs (ou attributs) de la table;</li>
+<li>Les identifiants se transforment en clés et se retrouvent soulignés. Chaque table dispose d’au minimum 1 clé dite primaire;</li>
+<li>Les relations et les cardinalités se transforment en champs anoté d'un <code>#</code> : il s’agit de créer des « clés étrangères » reliées à une « clé primaire » dans une autre table.</li>
+</ul>
+<h2 id="r%C3%A8gles-pour-les-relations-du-mcd">Règles pour les relations du MCD</h2>
+<h3 id="relation-type-p%C3%A8re-fils">Relation type Père-Fils</h3>
+<ul>
+<li>(<strong>cardinalité entité « père » : <code>0, N</code> ou <code>1, N</code></strong>) et (<strong>cardinalité entité « fils » : <code>0, 1</code> ou <code>1, 1</code></strong>)</li>
+<li>L'identifiant de l'entité « père » devient attribut de la table « fils » (<em>clé étrangère</em>).</li>
+</ul>
+<h3 id="relation-type-p%C3%A8re-p%C3%A8re">Relation type Père-Père</h3>
+<ul>
+<li>(<strong>cardinalité entité « père(s) » : <code>0, N</code> ou <code>1, N</code></strong>)</li>
+<li>La relation devient une table
+<ul>
+<li>les champs de cette table sont la concatenation des clés primaires des tables correspondantes.</li>
+</ul>
+</li>
+</ul>
+
+</body>
+</html>
