@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="../../stylesheet.css">
 
-# Story_01 - 
+# Story_00 —
 
 ## Contexte
 > .

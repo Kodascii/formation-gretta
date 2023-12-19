@@ -35,7 +35,7 @@ $ conda install <pkg>
 
 ### DELETE ENVIRONMENT
 ```sh
-$ conda env remove --name <env_name>
+$ conda remove --name <env_name> --all
 ```
 
 ### UPDATE CONDA

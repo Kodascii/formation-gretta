@@ -8,6 +8,7 @@
             "name": "workshops",
             "path": "../../workshops"
         },
+        /**
         {
             "name": "projects",
             "path": "../../projects"
@@ -16,9 +17,22 @@
             "name": "py-play",
             "path": "/home/kodascii/Projects/python/playground/"
         },
+        /**/
         {
             "name": "sql-play",
             "path": "/home/kodascii/Projects/sql/sql-play"
+        },
+
+        {
+            "name": "arch-linux",
+            "path": "/home/kodascii/Documents/computer-science/shell/"
+        },
+        {
+            "name": "dia_gretta",
+            "path": "/home/kodascii/Projects/web/dia_gretta/"
         }
-    ]
+    ],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "dia_gretta"
+    }
 }
