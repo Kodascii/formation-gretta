@@ -23,22 +23,9 @@
 | `INT` / `INTEGER(size)` | `size` *- specifies the maximum display width (which is 255)*                              |
 | `FLOAT(p)`              | `p` *- value to determine whether to use `FLOAT` or `DOUBLE` for the resulting data type.* |
 
-## MySQL CLI
 
-
-### Display user's grants
-```sql
-SHOW GRANTS FOR 'user'@'localhost'
-```
-
-### List all users
-```sql
-SELECT user, host FROM mysql.user;
-```
-
-
-
-## DataBase Operations
+# MySQL Requests
+## Database Management
 
 ### Display Databases
 ```sql
@@ -55,9 +42,24 @@ CREATE DATABASE db_name;
 DROP DATABASE db_name;
 ```
 
+### Execute .sql on a database
+```sh
+mysql -u root -p db_name_to_operate_on < requests.sql
+```
+
+### Display user's grants
+```sql
+SHOW GRANTS FOR 'user'@'localhost'
+```
+
 ### Create new user
 ```sql
 CREATE USER 'new_user'@'localhost' IDENTIFIED BY 'password';
+```
+
+### List all users
+```sql
+SELECT user, host FROM mysql.user;
 ```
 
 ### Alter user's password
@@ -80,6 +82,16 @@ ALTER DATABASE db_name READ ONLY = 1;
 
 
 ## Table Operations
+### Display tables
+```sql
+SHOW TABLES;
+```
+
+### Display columns
+```sql
+SHOW columns FROM table;
+```
+
 ### New table
 ```sql
 CREATE TABLE table_name (
@@ -90,28 +102,45 @@ CREATE TABLE table_name (
 );
 ```
 
-### Clone Table
-```sql
-CREATE TABLE new_table_name AS
-    SELECT column1, column2,...
-    FROM existing_table_name
-    WHERE ....;
-```
-
-### Insert a row into a table
+### Insert row(s) into a table
 ```sql
 INSERT INTO table_name (column1, column2, column3, ...)
 VALUES (value1, value2, value3, ...);
 ```
 
-### Rename Table
+```sql
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES
+    (value11, value12, ..., value1M)
+    (value21, value22, ..., value2M)
+    ...
+    (valueN1, valueN2, ..., valueNM)
+    ;
+```
+
+### Delete row(s) from a table
+```sql
+DELETE FROM table_name WHERE id = '1';
+```
+
+```sql
+DELETE FROM table_name;
+```
+
+### Rename table
 ```sql
 RENAME TABLE table_to_rename TO new_name;
 ```
 
-## OPERATIONS
+### Update table
+```sql
+UPDATE table_name SET column_name = <value> WHERE <condition>
+```
 
-### Searching
+
+## Searching
+
+### Select columns
 ```sql
 SELECT column1, column2, ...
 FROM table_name;
@@ -123,13 +152,11 @@ FROM table_name;
 ```
 
 
-
-
 ### Conditions
 ```sql
 SELECT column1, column2, ...
 FROM table_name
-WHERE predicate;
+WHERE condition;
 ```
 
 > The following operators can be used in the `WHERE` clause:

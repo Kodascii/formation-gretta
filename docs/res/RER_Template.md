@@ -37,5 +37,3 @@
 8. Répondre aux questions.
 
 # RER
-
-# Extras

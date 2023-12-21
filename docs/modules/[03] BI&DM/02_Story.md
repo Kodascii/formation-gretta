@@ -12,13 +12,15 @@
 - <def-of>Requête</def-of> : *Instruction qui permet de faire une opération sur des données dans un SGBD.*
 - <def-of>IDE (Integrated Development Environment)</def-of> : *Application logicielle qui aide les programmeurs à développer efficacement du code logiciel.*
 - <def-of>Principe Server-Client</def-of> : *Modèle de communication dans lequel un programme (le serveur) fournit des services ou des ressources à d'autres programmes (les clients). *
-- <def-of>`cursor()`</def-of> : *Instantiation d'un curseur tamponné (*et/ou brut*). En fonction également des options du curseur, les lignes peuvent être renvoyées sous forme de dictionnaire ou de tuple nommé.*
+- <def-of>Script d'import</def-of> : *Ensemble d'instruction pour importer des données de fichiers externes dans une BDD.*
+- <def-of>`cursor()`</def-of> : *Crée un objet lié à la classe `connect`, qui permet de passer des requêtes MySQL, et de récuperer le résultat.*
+- <def-of>`execute()`</def-of> : *Execute une requête sur la BDD sur laquelle le `cursor` est ouvert.*
 - <def-of>`fetchone()`</def-of> : *Retourne un tuple or `None`: Une ligne du jeu de résultats de la requête.*
-- <def-of>`fetchmany()`</def-of> : **
-- <def-of>`fetchall()`</def-of> : *Retourne une liste de tuples avec toutes les lignes d'un jeu de résultats de requête.*
+- <def-of>`fetchmany()`</def-of> : *Renvoye une liste d'enregistements d'une table (ou une liste vide si aucun enregistrement).*
+- <def-of>`fetchall()`</def-of> : *Récupère toutes les lignes du résultat d'une requête. (Retourne une liste de tuples)*
 - <def-of>`commit()`</def-of> : *Valide la transaction en cours.*
 - <def-of>`rollback()`</def-of> : *Annule la transaction en cours.*
-- <def-of>`where()`</def-of> : **
+- <def-of>`WHERE`</def-of> : *Clause SQL pour spécifier les conditions de filtrages dans une requête.*
 
 
 ## Problématiques
@@ -27,7 +29,7 @@
 1. Comment connecter une BDD à un programme python ?
 
 ## Hypothèses
-- <u>On peut accéder à une base de donne python sans usage d'un serveur pour un SGBD.</u> <h-t/>
+- <u>On peut accéder à une base de donnée en python sans usage d'un serveur pour un SGBD.</u> <h-t/>
     - *Il est possible d'accéder aux données sans serveur, mais, cela risque de compromettre la sécurité, les performances et l’intégrité des données.*
 - <u>On peut exporte une base de donne en ligne de commande.</u> <h-t/>
 
@@ -40,5 +42,3 @@
 1. Comparer MySQL Workbench avec PHPMyAdmin
 1. Faire le workshop
 1. Rendres livrables (en JNB)
-
-# RER
