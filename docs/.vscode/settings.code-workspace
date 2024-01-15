@@ -12,17 +12,17 @@
         {
             "name": "projects",
             "path": "../../projects"
-        },
+        },**/
         {
             "name": "py-play",
             "path": "/home/kodascii/Projects/python/playground/"
         },
-        /**/
+        /**
         {
             "name": "sql-play",
             "path": "/home/kodascii/Projects/sql/sql-play"
         },
-
+        **/
         {
             "name": "arch-linux",
             "path": "/home/kodascii/Documents/computer-science/shell/"

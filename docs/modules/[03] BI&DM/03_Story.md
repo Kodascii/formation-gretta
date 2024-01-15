@@ -13,7 +13,7 @@
     - <def-of>`INNER JOIN`</def-of> : *Retourne uniquement les lignes où il y a une correspondance entre les colonnes spécifiées dans les deux tables. Les lignes pour lesquelles aucune correspondance n'est trouvée sont exclues du résultat.*
     - <def-of>`FULL OUTER JOIN`</def-of> : *Retourne toutes les lignes lorsque des correspondances sont trouvées dans l'une ou l'autre des tables. Les colonnes sans correspondance contiennent des valeurs NULL*
 - <def-of>CRUD (Create Read Update Delete)</def-of> : *L'ensemble de ces quatre opérations couvre l'ensemble des actions de manipulation de données dans un système informatique.*
-- <def-of>Fonction d'agrégation</def-of> : *Fonction qui effectue un calcul sur un ensemble de valeurs et retourne une seule valeur résumée. *
+- <def-of>Fonction d'agrégation</def-of> : *Fonction qui effectue un calcul sur un ensemble de valeurs et retourne une seule valeur résumée. (`SUM`, `AVG`, `MIN`, `MAX`, etc.)*
 - <def-of>Clause</def-of> : *Partie spécifique d'une instruction SQL qui précise des conditions, des filtres ou des actions particulières à appliquer.*
 - <def-of>SQLAlchemy</def-of> : *Bibliothèque Python qui fournit un ensemble d'outils et de fonctionnalités pour faciliter l'interaction avec les bases de données relationnelles.*
 
@@ -23,8 +23,8 @@
 1. Comment faire des requêtes SQL avancée.
 
 ## Hypothèses
-- <u>Les jointures fonctionne de manière similaire aux opérations ensemblistes.</u> <h-f/>
-    - *Les opérations de jointure et les opérations d'ensemble remplissent des objectifs différents : les jointures combinent des colonnes en fonction d'une condition et les opérations d'ensemble combinent des ensembles de données entiers à l'aide d'opérations d'ensemble mathématiques. Ils répondent à des objectifs différents et fonctionnent de différentes manières.*
+- <u>Les jointures fonctionne de manière similaire aux opérations ensemblistes</u> <h-t/>
+    - *Voir algèbre relationnelle.*
 - <u>On peut faire une requête SQL dans une requête SQL</u> <h-t/>
 - <u>Une jointure peut se faire que entre deux tables</u> <h-t/>
 - <u>On peux renvoyer une jointure sql ou une requéte au format JSON</u> <h-t/>
