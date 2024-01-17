@@ -17,12 +17,15 @@
             "name": "py-play",
             "path": "/home/kodascii/Projects/python/playground/"
         },
+        {
+            "name": "black-py",
+            "path": "/home/kodascii/Projects/python/blackpy"
+        },
         /**
         {
             "name": "sql-play",
             "path": "/home/kodascii/Projects/sql/sql-play"
         },
-        **/
         {
             "name": "arch-linux",
             "path": "/home/kodascii/Documents/computer-science/shell/"
@@ -30,6 +33,11 @@
         {
             "name": "dia_gretta",
             "path": "/home/kodascii/Projects/web/dia_gretta/"
+        }
+        **/
+        {
+            "name": "all-maths",
+            "path": "/home/kodascii/Projects/latex/all_maths/"
         }
     ],
     "settings": {
