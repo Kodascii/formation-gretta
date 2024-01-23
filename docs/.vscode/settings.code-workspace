@@ -8,15 +8,16 @@
             "name": "workshops",
             "path": "../../workshops"
         },
-        /**
-        {
-            "name": "projects",
-            "path": "../../projects"
-        },**/
         {
             "name": "py-play",
             "path": "/home/kodascii/Projects/python/playground/"
         },
+        /**
+        {
+            "name": "projects",
+            "path": "../../projects"
+        },**
+        
         {
             "name": "black-py",
             "path": "/home/kodascii/Projects/python/blackpy"
@@ -34,11 +35,11 @@
             "name": "dia_gretta",
             "path": "/home/kodascii/Projects/web/dia_gretta/"
         }
-        **/
         {
             "name": "all-maths",
             "path": "/home/kodascii/Projects/latex/all_maths/"
         }
+                **/
     ],
     "settings": {
         "liveServer.settings.multiRootWorkspaceName": "dia_gretta"

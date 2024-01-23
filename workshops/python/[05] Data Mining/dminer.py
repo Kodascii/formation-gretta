@@ -8,15 +8,17 @@ def power_set(S:Set) -> Set:
     for i in range(1, 1 << cardinal):
         yield {ss for mask, ss in zip(masks, S) if i & mask}
 
+def is_valid(value):
+    if value is None or pd.isna(value):
+        return False
+    return True
 
 class Miner:
-    def __init__(self, data:pd.DataFrame, min_support, min_confidence, min_lift, min_length, header=None):
+    def __init__(self, data:pd.DataFrame, min_support=0.0, min_confidence=0.0):
         self.data = data
         self.min_support = min_support
         self.min_confidence = min_confidence
-        self.min_lift = min_lift
-        self.__min_length = min_length
-        self.__header = header
+        self.__header = data.columns.equals(pd.RangeIndex(start=0, stop=len(data.columns)))
 
     def __normalized(self, value):
         if value == 0 or value == False:
@@ -24,7 +26,7 @@ class Miner:
         if value == 1 or value == True:
             return 1
 
-    def __contains(self, X:Set, i:int):
+    def __contains(self, X:Set, i:int) -> bool:
         if self.__header == None or self.__header == False:
             return X.issubset(self.data.iloc[i])
         else:
@@ -41,6 +43,20 @@ class Miner:
                 count += 1
 
         return count
+    
+    def frequents(self) -> Set:
+        if self.__header == False:
+            return set(self.data.columns)
+        
+        freqs = set()
+        for i in range(len(self.data)):
+            record = self.data.iloc[i]
+            for j in range(len(record)):
+                item = record[j]
+                if is_valid(item):
+                    freqs.add(item)
+
+        return freqs
 
     def support(self, X:Set) -> float:
         return self.__count(X) / (len(self.data))

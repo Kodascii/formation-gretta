@@ -60,8 +60,6 @@
 | **Type de requête**               | Transactions simples, fréquentes, courtes                          | Requêtes complexes, moins fréquentes, ad-hoc   |
 | **Volume de transactions**        | Volume élevé de transactions courtes                               | Volume plus faible, requêtes analytiques complexes |
 | **Temps de réponse**              | Faible latence, temps de réponse rapide                            | Tolérant aux temps de réponse plus longs       |
-| **Concurrence et verrouillage**   | Forte concurrence, verrouillage fin                                | Concurrence plus faible, opérations de lecture importantes |
-| **Maintenance des données**       | Mises à jour fréquentes, insertions, suppressions                  | Mises à jour par lot périodiques, insertions |
 | **Normalisation**                 | Généralement fortement normalisé                                   | La dénormalisation est courante pour les performances |
 | **Exemples de cas d'utilisation** | Traitement des commandes, gestion des stocks                       | Intelligence d'affaires, exploration de données |
 | **Taille de la base de données**  | Généralement plus petite                                           | Peut être plus grande en raison du stockage des données historiques |
