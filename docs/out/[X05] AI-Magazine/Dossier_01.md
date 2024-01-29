@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../stylesheet.css">
+<link rel="stylesheet" href="../../stylesheet.css">
 
 # Dossier 01 : L'IA à la portée des PME
 
