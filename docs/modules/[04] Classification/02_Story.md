@@ -14,17 +14,19 @@
     - **Precision** : *Mesure la proportion de vrais positifs parmi toutes les prédictions positives.*
     - **Recall** : *Mesure la proportion de vrais positifs parmi tous les exemples réels positifs.*
     - **F1-Score** : *Une métrique qui combine précision et rappel.*
+    - **ROC (Receiver Operating Characteristic)** : *Courbe graphique utilisée pour évaluer la performance d'un modèle de classification, en particulier dans le contexte de la classification binaire*
     - **AUC-ROC** : *L'aire sous la courbe ROC, qui évalue la performance d'un modèle de classification binaire sur différents seuils.*
+- <def-of>ID3</def-of> : *(DecisionTreeClassifier) Un algorithme spécifique utilisé pour construire des arbres de décision en choisissant les meilleures caractéristiques pour diviser les données à chaque nœud.*
 - <def-of>Matice de confusion</def-of> : *Table qui est utilisée pour évaluer les performances d'un modèle de classification sur un ensemble de données, en comparant les prédictions du modèle aux vraies valeurs (étiquettes) des observations.*
-- <def-of>Overfitting</def-of> : **
+- <def-of>Overfitting</def-of> : *Il se produit lorsqu'un modèle est trop complexe par rapport à la complexité sous-jacente réelle des données.*
 - <def-of>Cross validation</def-of> : *Technique d'évaluation des performances d'un modèle d'apprentissage automatique. Son objectif principal est de maximiser l'utilisation des données d'entraînement tout en permettant une estimation fiable de la performance du modèle sur des données non vues.*
-- <def-of>Entropie</def-of> : **
+- <def-of>Entropie</def-of> : *Mesure du désordre (impureté, chaos ou encore le hasard)*
 - <def-of>CART (Classification and Regression Trees)</def-of> : *Technique utilisée pour la construction d'arbres de décision, tant pour les problèmes de classification que pour les problèmes de régression.*
 - <def-of>Gini</def-of> : *Mesure de l'impureté ou du désordre dans un ensemble d'éléments. L'impureté Gini est couramment utilisée comme critère pour diviser les nœuds dans un arbre de décision pendant le processus de construction.*
 - <def-of>`gridsearch`</def-of> : **
 
 ## Problématiques
-1. Comment fonctionne le ID3?
+1. Comment fonctionne le ID3 ?
 1. Comment utiliser le classifieur ID3 ?
 1. Comment choisir les hyper-paramètres pour que l'algo soit le mieux adaptés ?
 
@@ -114,3 +116,4 @@ La matrice de confusion a quatre entrées principales :
 - 2. **Modèle** : *Spécifier le modèle et les hyperparamètres du modèle*
 - 3. **Fonction Coût** : Ensemble des erreurs entre les prédictions du modèle et les vraies valeurs du dataset
 - 4. **Algorithme de minimisation** : Cherche à minimiser la fonction coût en cherchant les meilleurs paramètres.
+https://profs.info.uaic.ro/~ciortuz/SLIDES/ml3.pdf
