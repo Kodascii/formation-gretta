@@ -10,3 +10,6 @@
 - [BDD Lexique](https://www.base-de-donnees.com/categorie/lexique/)
 - [Sklearn lib](https://github.com/scikit-learn/scikit-learn/tree/9e38cd00d032f777312e639477f1f52f3ea4b3b7/sklearn)
 - [ML-Notes](https://profs.info.uaic.ro/~ciortuz/SLIDES/)
+
+## Wikipedia
+- [CSRF](https://en.wikipedia.org/wiki/Cross-site_request_forgery)

@@ -23,7 +23,6 @@
 - <def-of>Entropie</def-of> : *Mesure du désordre (impureté, chaos ou encore le hasard)*
 - <def-of>CART (Classification and Regression Trees)</def-of> : *Technique utilisée pour la construction d'arbres de décision, tant pour les problèmes de classification que pour les problèmes de régression.*
 - <def-of>Gini</def-of> : *Mesure de l'impureté ou du désordre dans un ensemble d'éléments. L'impureté Gini est couramment utilisée comme critère pour diviser les nœuds dans un arbre de décision pendant le processus de construction.*
-- <def-of>`gridsearch`</def-of> : **
 
 ## Problématiques
 1. Comment fonctionne le ID3 ?
