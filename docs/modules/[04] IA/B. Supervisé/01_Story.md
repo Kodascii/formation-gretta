@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../../stylesheet.css">
+<link rel="stylesheet" href="../../../stylesheet.css">
 
 # Story_01 — Naïve Bayes
 

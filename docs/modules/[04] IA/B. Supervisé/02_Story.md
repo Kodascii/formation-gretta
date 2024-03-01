@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../../stylesheet.css">
+<link rel="stylesheet" href="../../../stylesheet.css">
 
 # Story_00 — Arbre de décision
 
